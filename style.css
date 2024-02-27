@@ -1,0 +1,152 @@
+body {
+    /* border: 1px solid red; */
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    padding: 60px 14px; 
+}
+main {
+    /* border: 2px solid blue; */
+    box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.10); 
+    background-color: transparent;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+div {
+    /* border: 1px solid black; */
+    padding: 15px;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+h1 {
+    font-size: 22px;
+}
+h2 {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    /* set static by instructions */
+}
+h1, h2, p {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+/* top community container */
+.community-container {
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.community-container h1 {
+    color:hsl(179, 62%, 43%);
+}
+.community-container h2 {
+    color:hsl(71, 73%, 54%);
+}
+.community-container p {
+    color:hsl(218, 22%, 67%);
+    line-height: 28px;
+}
+
+/* middle subscription container  */
+
+.subscription-container {
+    background-color: hsl(179, 62%, 39%);
+    filter: brightness(80%);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+}
+.subscription-container h2 {
+    margin-bottom: 10px;
+}
+.large-dollars {
+    Font-size: 38px;
+    vertical-align: middle;
+}
+.small-font {
+    padding-left: 10px;
+    font-weight: 100;
+    opacity: 0.5;
+    vertical-align: middle;
+}
+/* target just the per month to make it more opaque or gray */
+.subscription-container p {
+    font-size: 18px;
+    margin-top: 0px;
+}
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    /* padding: 15px 0; */
+    /* padding: 15px 110px; */
+    padding: 15px 0;
+    width: 95%;
+    border-radius: 6px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* bottom Why Us contaienr */
+.why-us-container {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.why-us-container p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 24px;
+}
+
+@media (min-width: 768px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        max-width: 50vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    div {
+        padding: 40px;
+    }
+    .community-container {
+        grid-column: 1 / span 2;
+    }
+    .subscription-container {
+        border-bottom-left-radius: 8px;
+    }
+    .subscription-container h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .why-us-container {
+        border-bottom-left-radius: 0;
+    }
+    button {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
